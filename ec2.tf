@@ -14,7 +14,7 @@ resource "aws_instance" "vault_raft_amz2" {
     service = "${var.tag_name}"
   }
   user_data = templatefile(
-    "user_data.tpl", {
+    "${path.module}/user_data.tpl", {
       TAG           = var.tag_name
       vault_version = var.vault_version
       vault_license = var.VAULT_LICENSE
