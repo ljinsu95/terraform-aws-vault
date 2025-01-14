@@ -5,15 +5,15 @@ variable "prefix" {
 
 #################################################
 # 민감 변수 값
-variable "AWS_ACCESS_KEY_ID" {
-  description = "AWS ACCESS KEY"
-  sensitive   = true
-}
+# variable "AWS_ACCESS_KEY_ID" {
+#   description = "AWS ACCESS KEY"
+#   sensitive   = true
+# }
 
-variable "AWS_SECRET_ACCESS_KEY" {
-  description = "AWS SECRET ACCESS KEY"
-  sensitive   = true
-}
+# variable "AWS_SECRET_ACCESS_KEY" {
+#   description = "AWS SECRET ACCESS KEY"
+#   sensitive   = true
+# }
 
 variable "VAULT_LICENSE" {
   type        = string
